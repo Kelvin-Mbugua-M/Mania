@@ -1,0 +1,49 @@
+.home-main-component{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    justify-items: center;
+    
+}
+.main-home-welcome-picture-movie{
+    height: 80vh;
+    width: 90vw;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: brown;
+}
+.home-main-link{
+    height: 56px;
+    width: 172px;
+    background: rgb(55, 77, 97);
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    margin: 24px;
+}
+.home-main-link a{
+    height: inherit;
+    width: inherit;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: aliceblue; 
+    font-size: 16pt;   
+}
+.main-home-welcome-picture-movie h1{
+    font-size: 42pt;
+    color: aliceblue;
+}
+.main-home-welcome-picture-movie article{
+    color: aliceblue;
+    font-size: 20pt;
+}

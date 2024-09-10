@@ -1,0 +1,41 @@
+.buttons-submit-sign-up{
+    width: 60%;
+    height: 34px;
+    color: aliceblue;
+    outline: none;
+    background: rgb(55, 77, 97);
+    border: none;
+    border-radius: 12px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.buttons-submit-sign-up img{
+    margin-right: 12px;
+    
+}
+.sign-up-input{
+    margin-top: 12px;
+}
+.links-sign-up{
+    margin-left: 12px;
+    color: black;
+    text-decoration: underline;
+    cursor: url('../../Utilities/Icons/click.png') auto;
+}
+.sign-up-terms-folder,.sign-up-redirect-section{
+    display: flex;
+    height: 20px;
+     margin: 12px 0 12px 0;
+    flex-wrap: wrap;
+}
+.sign-up-terms-folder{
+    justify-content: flex-start;
+    width: 70%; 
+}
+.link-to,.sign-up-redirect-info
+{
+    font-size: 8pt;
+}

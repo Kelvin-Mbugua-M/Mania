@@ -1,0 +1,13 @@
+
+a{
+    cursor: url('/src/Utilities/Icons/pointer.png') auto;
+}
+a::after{
+    color: brown;
+}
+button{
+    cursor: url('/src/Utilities/Icons/pointer.png') auto;
+}
+button:active,button:focus{
+    cursor: url('/src/Utilities/Icons/target.png') auto;
+}

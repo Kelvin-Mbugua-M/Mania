@@ -1,0 +1,24 @@
+.main-app-body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#28223a;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+*{
+    cursor: url('/src/Utilities/Icons/pointer.png') , auto;
+}
+a{
+    cursor: url('/src/Utilities/Icons/click.png') , auto;
+}
+button{
+    cursor:url('/src/Utilities/Icons/target.png');
+}
+input{
+    cursor: url('/src/Utilities/Icons/cursor.png') , auto;
+}

@@ -1,0 +1,54 @@
+.navigation-parent-component{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 72px;
+    background: #28223a;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    border: none;
+    border-bottom: solid 1px rgb(58, 59, 59);
+}
+.logo-navigation-component{
+    height: inherit;
+    width: 36vw;
+    padding: 0;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    background:transparent;
+}
+.logo-navigation-component article{
+    font-size: 24pt;
+    font-weight: 600;
+}
+.image-profile{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin: 4px;
+    margin-right: 20px;
+}
+.navigation-component-links,.navigation-component-links nav{
+    height: inherit;
+    width: 56vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+.navigation-component-links nav ul{
+    width: 56vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.navigation-component-links nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14pt;
+}

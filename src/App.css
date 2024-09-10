@@ -1,0 +1,19 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*>a{
+  cursor:url('/src/Utilities/Icons/cursor.png') auto;
+}
+button{
+  cursor:url('/src/Utilities/Icons/target.png') auto;
+}
+::-webkit-scrollbar-track-piece{
+  background-color: red;
+}
+body{
+  min-width:100vw;
+  min-height: 100vh;
+  padding: 0;
+}

@@ -1,0 +1,72 @@
+.movie-box-parent{
+    min-height: auto;
+    width: 100vw;
+    padding: 20px;
+    background:transparent;
+    margin: 24px 0 24px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.movie-box-card{
+    height: 200px;
+    width: 280px;
+    margin: 0px 6px 24px 6px;
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.movie-box-card-box{
+    height: 120px;
+    width: 280px;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(255, 255,255,.1);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    transform: translateY(1200px);
+    animation: Hide 2000ms forwards;
+}
+.movie-box-card-box{
+    color: aliceblue;
+    overflow: hidden;
+    user-select: none;
+}
+.movie-box-card-box article{
+    overflow-wrap: break-word;
+}
+.movie-box-card:hover{
+    animation:makeParentBig 2000ms forwards;
+}
+.movie-box-card:hover .movie-box-card-box{
+    animation: Unhide 2000ms forwards;
+}
+@keyframes makeParentBig{
+    90%{
+        overflow: hidden;
+    }
+    to{
+        overflow: visible;
+    }
+}
+@keyframes Unhide{
+    90%{
+        transform: translateY(0);
+    }
+    100%{
+        transform:translateY(100px) scale(1.02);
+    }
+}
+@keyframes Hide {
+    from{
+        transform: translateY(100px) scale(1.02);
+    }
+    20%{
+        transform: translate(0px) scale(1);
+    }
+    to{
+        transform: translateY(1200px);
+    }
+}

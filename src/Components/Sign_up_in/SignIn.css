@@ -1,0 +1,142 @@
+.sign-in-main-component,
+.sign-up-main-body-component{
+    height: 100vh;
+    width: 100vw;
+    background:rgb(55, 77, 97);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    user-select: none;
+}
+.sign-in-main-body-component
+,.sign-up-body-content{
+    height: 600px;
+    width: 1200px;
+    background: rgb(255, 255, 255 , 0.3);
+    backdrop-filter: blur(32px) brightness(5);
+    border-radius: 24px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px 0px 8px;
+}
+.sign-in-body,
+.body-content-sign-up{
+    background: transparent;
+    height: 98%;
+    width: 48%;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-in-statement,
+.sign-up-statement{
+    font-size: 18pt;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin: 12px;
+    color: black;
+
+}
+.sign-in-information,
+.sign-up-information{
+    width: 60%;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-wrap: overflow;
+    font-weight: 300;
+    font-size: 12pt;
+}
+.sign-in-inputs,
+.sign-up-input{
+    height: 32px;
+    width: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: .1px solid black;
+}
+.sign-in-inputs-data,
+.sign-up-input-data{
+    padding-left: 48px;
+}
+label {
+    text-align: left;
+    display: inline-block;
+    width: inherit;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 8pt;
+}
+.sign-in-body a{
+    color: #333;
+    font-size: 9pt;
+    width: inherit;
+    text-align: right;
+    
+    text-transform: capitalize;
+}
+
+.sign-in-image,
+.main-body-img-sign-up{
+    height: 98%;
+    width: 48%;
+    border-radius: 24px;
+}
+.sign-in-button{
+    background-color: rgb(55, 77, 97);
+    color: aliceblue;
+    border: none;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 12px 0 12px 0;
+}
+.sign-in-socials{
+    background-color: rgb(146, 178, 206);
+    border: none;
+    outline: none;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 12px 0 6px 0;
+    
+}
+.sign-in-socials{
+    height: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in-socials img{
+    height: auto;
+    margin-right: 12px;
+}
+.sign-in-link-to-sign-up{
+    font-size: 8pt;
+    font-weight: lighter;
+    color: #333;
+    display: flex;
+}
+.sign-in-link-to-sign-up a{
+    margin-left: 12px;
+    text-decoration: underline;
+    font-size: 8pt;
+    color: #222;
+    cursor:url('/src/Utilities/Icons/cursor.png') auto;
+}
+.sign-in-copyright{
+    font-size: 8pt;
+    color: #666;
+    margin-top: 12px;
+}
