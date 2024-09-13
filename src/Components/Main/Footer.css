@@ -1,0 +1,25 @@
+.footer-parent{
+    height: 160px;
+    width: 100vw;
+    background: transparent;
+    display: grid;
+    place-items: center;
+}
+.footer-images{
+    display: flex;
+}
+.footer-images button{
+    height: 32px;
+    width: 32px;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    margin: 0px 12px 0px 12px;
+}
+.footer-parent a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 32px 0px 32px;
+}

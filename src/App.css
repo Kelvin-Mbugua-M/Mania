@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 *>a{
   cursor:url('/src/Utilities/Icons/cursor.png') auto;
@@ -16,4 +17,7 @@ body{
   min-width:100vw;
   min-height: 100vh;
   padding: 0;
+}
+a{
+  user-select: auto;
 }

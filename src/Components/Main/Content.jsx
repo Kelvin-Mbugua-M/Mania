@@ -10,20 +10,22 @@ import SeriesDetails from '../Details/Series/SeriesDetails.jsx'
 import Trending from '../Pages/Trending.js'
 import Popular from '../Pages/Popular.js'
 import SearchRender from '../Pages/SearchRender.jsx'
+import MovieCopyRight from '../CopyRightClaims/MovieCopyRight.jsx'
 const Content = () => {
   const {toMovieId,toSeriesId} = useParams()
   return (
     <div className='main-app-body'>
         <Router>
           <Routes>
-            <Route exact path ={'/home' || '/'} element={<Home/>}/>
-            <Route exact path ={ '/'} element={<Home/>}/>
+            <Route exact path ={'/home'} element={<Home/>}/>
+            <Route exact path ={'/'} element={<Home/>}/>
+            <Route exact path ={ '/copy-right'} element={<MovieCopyRight/>}/>
             <Route exact path = '/sign-up' element={<SignUp/>} />
             <Route exact path = '/sign-in' element={<SignIn/>}/>
             <Route exact path='/error' element={<Error404/>}/>
             <Route exact path='/series' element={<SeriesDetails/>}/>
-            <Route exact path='/trending' element={<SearchRender/>}/>
-            <Route exact path='/popular' element={<Popular/>}/>
+            <Route exact path='/trending' element={<SearchRender props='search/movie?'/>}/>
+            <Route exact path='/popular' element={<SearchRender props='search/movie?' withLink='&with_genres=16'/>}/>
 
 
 

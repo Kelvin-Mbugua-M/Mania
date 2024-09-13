@@ -5,6 +5,7 @@ import "./Home.css";
 import WolfMan from "../../Utilities/Images/wolf-without-teeth.jpg";
 import DeadWOlf from '../../Utilities/Images/image.jpg'
 import MovieBox from "./MovieBox";
+import Footer from "./Footer";
 const Home = () => {
   console.log(WolfMan);
   const date = Date.now();
@@ -26,6 +27,7 @@ const Home = () => {
         </div>
       </div>
       <MovieBox/>
+      <Footer/>
     </div>
   );
 };
