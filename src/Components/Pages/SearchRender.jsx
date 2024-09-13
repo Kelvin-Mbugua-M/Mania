@@ -8,6 +8,7 @@ import { WolfMan } from '../Navigation/Navigation'
 import Default from '../../Utilities/Images/Default.jpg'
  import { ApiKey ,ImageUrl,BaseUrl } from '../TMDB/Resources'
 import Loader from '../StylesAll/Loader.js'
+import Footer from '../Main/Footer.jsx'
 const SearchRender = ({props,withLink}) => {
   const [searchResults,setSearchResults] = useState([])
   const [searchBarValue , setSearchBarValue] = useState('')
@@ -57,8 +58,10 @@ const SearchRender = ({props,withLink}) => {
             </div>
           </div>))):(<Loader/>)}
         </div>
+        <Footer/>
     </div>
   )
 }
 
 export default SearchRender
+export {SearchIcon}

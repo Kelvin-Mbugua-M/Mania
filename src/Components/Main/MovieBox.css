@@ -7,6 +7,9 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+a,a:hover{
+    text-decoration: none;
+}
 .movie-box-card{
     height: 200px;
     width: 280px;
@@ -18,6 +21,7 @@
     border-radius: 24px;
     overflow: hidden;
 }
+.movie-box-card a ,.movie-box-card a:hover{ text-decoration: none;}
 .movie-box-card-box{
     height: 120px;
     width: 280px;
@@ -31,6 +35,7 @@
 }
 .movie-box-card-box{
     color: aliceblue;
+    text-decoration: none;
     overflow: hidden;
     user-select: none;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState , useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './MovieBox.css'
 import { WolfMan } from '../Navigation/Navigation'
 import { ApiKey,ImageUrl } from '../TMDB/Resources'
@@ -21,11 +22,13 @@ const MovieBox = ({props}) => {
        {movieDetails.length>0?(
         movieDetails.map((element,index)=>(
          <div className="movie-box-card" key={index} style={{backgroundImage:`url(${element.backdrop_path?ImageUrl+element.backdrop_path  :WolfMan})`}}>
-        <div className="movie-box-card-box">
+          <Link to={'/' + element.id}>
+       <div className="movie-box-card-box">
           <article>Title:{element.original_title}</article>
           <article>Date:{element.release_date
           }</article>
         </div>
+        </Link>
         </div>
         ))
         
