@@ -12,6 +12,7 @@ import Popular from '../Pages/Popular.js'
 import SearchRender from '../Pages/SearchRender.jsx'
 import MovieCopyRight from '../CopyRightClaims/MovieCopyRight.jsx'
 import Shows from '../Pages/Shows.js'
+import Recent from '../Pages/Recent.jsx'
 const Content = () => {
   const {toMovieId,toSeriesId} = useParams()
   return (
@@ -26,6 +27,7 @@ const Content = () => {
             <Route exact path='/error' element={<Error404/>}/>
             <Route exact path='/series' element={<SeriesDetails/>}/>
             <Route exact path='/tv-shows' element={<Shows/>}/>
+            <Route exact path='/recently-added' element={<Recent/>}/>
             <Route exact path='/trending' element={<SearchRender props='search/movie?'/>}/>
             <Route exact path='/popular' element={<SearchRender props='search/movie?' withLink='&with_genres=16'/>}/>
 

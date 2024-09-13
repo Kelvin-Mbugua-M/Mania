@@ -30,7 +30,7 @@ a,a:hover{
     background-color: rgb(255, 255,255,.1);
     backdrop-filter: blur(10px);
     border-radius: 24px;
-    transform: translateY(1200px);
+    transform: translateY(1200px) scale(0);
     animation: Hide 2000ms forwards;
 }
 .movie-box-card-box{
@@ -58,7 +58,8 @@ a,a:hover{
 }
 @keyframes Unhide{
     90%{
-        transform: translateY(0);
+        transform: translateY(-0px)  scale(.98);
+
     }
     100%{
         transform:translateY(100px) scale(1.02);

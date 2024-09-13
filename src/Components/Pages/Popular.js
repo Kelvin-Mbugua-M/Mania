@@ -8,8 +8,8 @@ const Popular = () => {
   return (
     <>
       <Navigation />
-      <Loader/>
-      <footer/>
+      <MovieBox/>
+      <Footer/>
     </>
   );
 };
