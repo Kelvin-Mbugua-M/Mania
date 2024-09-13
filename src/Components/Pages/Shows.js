@@ -16,10 +16,7 @@ const Shows = () => {
   const getSearchData = (value) => {
     fetch(`${BaseUrl}search/tv?api_key=${ApiKey}&query=${value}`)
       .then((response) => response.json())
-      .then((data) => {
-        setShows(data.results);
-        console.log(data.results);
-      })
+      .then((data) =>setShows(data.results))
       .catch((Error) => console.log("failed search operation"));
   };
   const decideSearch = (value) => {
@@ -27,7 +24,7 @@ const Shows = () => {
       return getSearchData(value);
     } 
     else if(value.length ===0){
-        getSearchData("m")
+        getSearchData("house of the")
     }
      else return getSearchData("m");
   };
@@ -70,7 +67,7 @@ const Shows = () => {
                     })`,
                   }}
                 >
-                  <Link to={value.id}>
+                  <Link to={value.id} >
                     <div className="movie-box-card-box">
                       <article>Title : {value.original_name}</article>
                       <article> Name : {value.name}</article>
